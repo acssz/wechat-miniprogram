@@ -1,0 +1,5 @@
+<!--pages/description/index.wxml-->
+<div id="card" class="drop-shadow" style="border-radius:100rpx; top:0rpx; left:-25rpx; height:650rpx; width:650rpx;">
+  <text style="width:580rpx; font-size: 30rpx; margin-left:40rpx; margin-top: 80rpx; position:absolute; color: rgb(100, 100, 100);">1. 当你在实体店消费时，请在结账前向服务人员出示学联卡，以便顺利享受优惠。如果没有及时出示学联卡，可能无法获得折扣\n\n2. 如果你发现商家实际优惠和描述不符，请发邮件至xuelian@acszz.org反馈，我们将尽快处理并回复\n\n3. 学联友友App正在开发中，如你有兴趣参与设计和开发，请联系xuelian@acszz.org</text>
+</div>
+<div id="{{cate._id}}" bindtap="toAdmin" class="drop-shadow" style="position:absolute; border-radius:50rpx; top:770rpx; left:50rpx; height:80rpx; width:500rpx; justify-content: center; display: flex; align-items: center; opacity: {{showAdmin}};">您是管理员，点击进入后台</div>

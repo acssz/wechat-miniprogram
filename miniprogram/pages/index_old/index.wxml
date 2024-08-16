@@ -1,0 +1,81 @@
+<!--index.wxml-->
+<view class="container">
+
+  <!-- 用户 openid -->
+  <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}" class="userinfo-opendata">
+      <view class="userinfo-block-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+        <open-data type="userNickName"></open-data>
+      </view>
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+      <button 
+        wx:if="{{canIUseGetUserProfile}}" 
+        bindtap="getUserProfile"
+        class="userinfo-avatar"
+        style="background-image: url({{avatarUrl}})"
+        size="default"
+      ></button>
+      <button
+        wx:else
+        open-type="getUserInfo"
+        bindgetuserinfo="onGetUserInfo"
+        class="userinfo-avatar"
+        style="background-image: url({{avatarUrl}})"
+        size="default"
+      ></button>
+    </block>
+    <block wx:else>
+      <image class="userinfo-block-avatar" bindtap="bindViewTap" src="{{avatarUrl}}" mode="cover"></image>
+    </block>
+    <text class="userinfo-nickname">{{nickName}}</text>
+  </view>
+
+  <!-- 学联论坛 -->
+  <!-- <view class="uploader">
+    <navigator url="../forum/forum" open-type="navigate" class="uploader-text">
+      <mp-icon icon="sticker" color="green" type="field" size="24"></mp-icon>
+      <text class="padx">学联论坛</text>
+    </navigator>
+  </view> -->
+
+  <!-- 我的学联卡 -->
+  <view class="uploader">
+    <view class="uploader-text" bindtap="onShowCard">
+      <mp-icon icon="me" color="green" type="field" size="24"></mp-icon>
+      <text class="padx">电子学联卡</text>
+    </view>
+  </view>
+
+  <!-- 学联卡合作商家 -->
+  <view class="uploader">
+    <navigator url="../gallery/gallery" open-type="navigate" class="uploader-text">
+      <mp-icon icon="star" color="green" type="field" size="24"></mp-icon>
+      <text class="padx">学联卡合作商家</text>
+    </navigator>
+  </view>
+
+  <!-- 学联卡激活服务 -->
+  <view class="uploader">
+    <view class="uploader-text" bindtap="onActivation">
+      <mp-icon icon="refresh" color="green" type="field" size="24"></mp-icon>
+      <text class="padx">学联卡激活服务</text>
+    </view>
+  </view>
+
+  <!-- 新版学联卡测试 -->
+  <view class="uploader">
+    <navigator url="../login/index" open-type="navigate" class="uploader-text">
+      <mp-icon icon="star" color="red" type="field" size="24"></mp-icon>
+      <text class="padx">新版学联卡测试</text>
+    </navigator>
+  </view>
+
+  <image class="image1" src="../../images/acssz.png" mode="aspectFit"></image>
+
+  <view class="container">
+
+</view>
+
+</view>

@@ -1,0 +1,18 @@
+<view>
+  <!-- <view class="title">ACSSZ学联卡自助激活服务</view> -->
+
+  <view class="guide">
+    <text class="headline">学联论坛</text>
+      <text class="p">ACSSZ论坛（forum.acssz.org）是面向苏黎世地区学生学者的开放论坛，由苏黎世学联运营。</text>
+      <text class="p">在论坛里，你可以即时参与学联活动的互动，交流在苏黎世学习生活的心得体会，结识相同兴趣爱好相同人生目标的小伙伴。哪怕你在生活中遇到不如意需要咨询需要维权需要安慰，也可以在这里得到回应。</text>
+      <text class="p">当然，如果可以，也期待你对同在苏黎世生活的同胞抱有同情心同理心，必要时利用自己的经验、智慧、专长给予帮助。正所谓山河不足重，重在遇知己。</text>
+      <text class="p">此外，我们最近开发了“学联友友”app🎉！当前已经统合了电子学联卡和论坛客户端，已经上线到应用商店，后续正式发布和重大更新会有推送，尽请期待！</text>
+      <text class="p">快来扫描下面的二维码，现在就加入苏黎世学生学者自由交流的社区吧🥳🥳！</text>
+    <view class="tips"></view>
+  </view>
+
+  <view class="forum-public forum-item">
+    <image src="./images/forum_qr.png" mode="aspectFill" class="card-bg"></image>
+  </view>
+
+</view>

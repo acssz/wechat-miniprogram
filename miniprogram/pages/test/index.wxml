@@ -1,0 +1,7 @@
+<label class="label">
+  <div class="toggle" bindtap="onToggle" >
+    <input class="toggle-state" type="checkbox" name="check" value="check" />
+    <div class="indicator_{{toggleClass}}"></div>
+  </div>
+  <div class="label-text">no more emails plz</div>
+</label>

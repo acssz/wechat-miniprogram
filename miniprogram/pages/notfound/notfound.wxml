@@ -1,0 +1,14 @@
+<!--pages/chooseLib/chooseLib.wxml-->
+<view class="container">
+
+  <view class="list">
+    <view class="list-item">
+      <text class="black">初始化失败</text>
+    </view>
+    <view class="list-item">
+      <text class="request-text">服务器正在维护，请耐心等待</text>
+    </view>
+  </view>
+
+</view>
+

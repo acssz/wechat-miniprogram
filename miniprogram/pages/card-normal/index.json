@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "",
+  "navigationBarBackgroundColor": "#ecf0f3",
+  "disableScroll": false,
+  "navigationStyle":"custom",
+  "disableSwipeBack":true
+}

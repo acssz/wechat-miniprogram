@@ -1,0 +1,23 @@
+<view class="list" style="margin-top:50rpx;">
+  <block wx:for="{{partners}}" wx:key="name" wx:for-item="cate">
+    <!--<view class="category" style="margin-left:0rpx">
+      <text class="name">{{cate.name}}</text>
+    </view>-->
+    <view class="list">
+      <block wx:for="{{cate.items}}" wx:key="name" wx:for-item="shop">
+        <view>
+          <div id="card" class="drop-shadow" style="border-radius:70rpx; bottom:0rpx; left:-110rpx; height:250rpx; width:650rpx;">
+            <div style="background-color: white; margin-left: 50rpx; border-radius: 50rpx; margin-top:40rpx; overflow: hidden; align-items: center; display: flex;">
+              <image class="icon" src="{{shop.icon}}" mode="aspectFit"></image>
+            </div>
+            <view class="info">
+              <text class="name">{{shop.name}} {{shop.alias}}</text>
+              <text class="address">{{shop.address}}</text>
+              <text class="detail">{{shop.favorable}}</text>
+            </view>
+          </div>
+        </view>
+      </block>
+    </view>
+  </block>
+</view>

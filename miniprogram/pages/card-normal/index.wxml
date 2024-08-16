@@ -1,0 +1,16 @@
+<div id="card" class="inner-shadow glow-effect" style="border-radius:80rpx; top:220rpx; left:40rpx; height:750rpx; width:460rpx; background: {{UrlBg}} no-repeat 0rpx 440rpx; background-size:600rpx 400rpx;">
+    <view style="font-family:Impact; font-weight: bold; font-size: 40rpx; color: rgb(36, 51, 102);  font-style: italic; margin-left: 40rpx; margin-bottom: 0rpx; margin-top: 40rpx;">{{chinesePY}}</view>
+    <view style="font-family:Impact; font-weight: bold; font-size: 40rpx; color: rgb(36, 51, 102);  font-style: italic; margin-left: 40rpx; margin-bottom: 0rpx; margin-top: -20rpx;">{{chineseName}}</view>
+    <view style="font-family:Impact; font-weight: bold; font-size: 25rpx; color: rgb(36, 51, 102);  font-style: italic; margin-left: 40rpx; margin-bottom: 0rpx; margin-top: -10rpx;">苏黎世学联电子卡</view>
+    <view style="font-family:dot; font-size: 30rpx; color: rgb(102, 102, 102); margin-left: 40rpx; margin-top: 70rpx;">{{openidHashLine1}}</view>
+    <view style="font-family:dot; font-size: 30rpx; color: rgb(102, 102, 102); margin-left: 40rpx; margin-top: -10rpx;">{{openidHashLine2}}</view>
+    <view style="font-family: dot; font-size: 32rpx; color: rgb(102, 102, 102); margin-left: 40rpx; margin-bottom: 0rpx; margin-top: 20rpx;">BIS {{validDateBis}}</view>
+</div>
+<image src="{{UrlAcssz}}" style="width:100rpx;height:110rpx; position: relative; top:340rpx; right:120rpx;"></image>
+<div style="top:300rpx;width: 100%;height: 100rpx;left:0rpx; display: flex;justify-content:center;align-items: center;margin-left: 0rpx;margin-top: 0rpx;">
+  <view style="font-family:dot; font-size: 150rpx; color: rgb(0, 101, 119); margin-left: 0rpx; margin-bottom: 0rpx; margin-top: 0rpx;">{{validStatus}}</view>
+</div>
+<div bindtap="coopList" class="neumorphic-btn" style="top:330rpx; border-radius:40rpx; left:60rpx; height:80rpx; width:185rpx;display: flex;justify-content:center;align-items: center;"><view style="font-size: 25rpx; color: rgb(114, 114, 114); margin-left: 0rpx; margin-bottom: 0rpx; margin-top: 0rpx;">合作商家</view></div>
+<div bindtap="description" class="neumorphic-btn" style="top:330rpx; border-radius:40rpx; left:60rpx; height:80rpx; width:185rpx; display: flex;justify-content:center;align-items: center;"><view style="font-size: 25rpx; color: rgb(114, 114, 114); margin-left: 0rpx; margin-bottom: 0rpx; margin-top: 0rpx;">使用说明</view></div>
+
+<div style="font-size: 20rpx; color: rgb(200, 200, 200); background-color: rgb(200, 200, 200,0); margin-left: 0rpx; margin-bottom: 50rpx; top: 350rpx; left: 180rpx;">如有疑问请发送邮件到xuelian@acssz.org反馈</div>

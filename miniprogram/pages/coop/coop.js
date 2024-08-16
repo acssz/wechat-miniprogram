@@ -1,0 +1,92 @@
+// pages/coop/coop.js
+const fs = wx.getFileSystemManager();
+Page({
+
+  /**
+   * 页面的初始数据
+   */
+  data: {
+  },
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad(options) {
+    wx.showLoading({
+      title: '加载中',
+    })
+    var that = this;
+    console.log("load")
+    wx.cloud.downloadFile({
+      fileID: 'cloud://cloud1-7gi5yqaof9e25fc9.636c-cloud1-7gi5yqaof9e25fc9-1305406957/coop/partner.json',
+      success: res => {
+        console.log(res)
+        var jp = res.tempFilePath
+        fs.readFile({
+          filePath: jp,
+          encoding: 'utf-8',
+          success: function (res) {
+            var jsonData = JSON.parse(res.data);
+            wx.hideLoading()
+            console.log(jsonData);
+            that.setData({"partners":jsonData})
+          },
+          fail: function (err) {
+            console.error('读取失败', err);
+          }
+        });
+      },
+      fail: res=>{
+        console.log(res)
+      }
+    })
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady() {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow() {
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide() {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload() {
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh() {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom() {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage() {
+
+  }
+})

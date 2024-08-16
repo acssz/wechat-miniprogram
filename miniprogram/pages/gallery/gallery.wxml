@@ -1,0 +1,24 @@
+<view class="container">
+  <view class="list">
+    <block wx:for="{{partners}}" wx:key="name" wx:for-item="cate">
+      <view class="tips"></view>
+      <view class="category">
+        <text class="name">{{cate.name}}</text>
+      </view>
+      <view class="list">
+      <block wx:for="{{cate.items}}" wx:key="name" wx:for-item="shop">
+        <view class="list-item">
+          <image class="icon" src="{{shop.icon}}" mode="aspectFit"></image>
+          <view class="info">
+            <text class="name">{{shop.name}} {{shop.alias}}</text>
+            <text class="address">{{shop.address}}</text>
+            <text class="detail">{{shop.favorable}}</text>
+          </view>
+        </view>
+      </block>
+
+  </view>
+    </block>
+  </view>
+
+</view>

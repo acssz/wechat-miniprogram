@@ -1,0 +1,26 @@
+<view>
+  <!-- <view class="title">ACSSZ学联卡自助激活服务</view> -->
+
+  <view class="tips"></view>
+
+  <view class="vipcard-public vipcard-item">
+    <image src="./images/card_resized_compressed.png" mode="aspectFill" class="card-bg"></image>
+    <!-- <image src="./images/acssz_logo.png" mode="aspectFill" class="org-logo"></image> -->
+    <!-- <text class="org-name">ACSSZ</text> -->
+    <!-- <text class="account-id">{{openid}}</text> -->
+    <text class="account-name" wx:if="{{status}}">持卡人：{{formData.name.value}}</text>
+    <text class="account-year" wx:if="{{status}}">有效期至：2023.09</text>
+    <!-- <text class="account-year" wx:if="{{status}}">{{date}}</text> -->
+    <text class="account-name-alert" wx:if="{{!status}}">无效状态</text>
+    <text class="account-year-alert" wx:if="{{!status}}">学联卡尚未激活</text>
+  </view>
+
+  <view class="guide">
+    <text class="headline">注意事项</text>
+      <text class="p">1. 当在实体店消费时，请在<text class="h">点单时/结账前</text>向服务人员出示学联卡，以便顺利享受优惠。（否则影响到店面做收支账单有可能无法获得折扣）</text>
+      <text class="p">2. 如果发现优惠和描述不符，建议在学联群反馈。有其他建议或需求，可以在学联群里@🌵</text>
+      <text class="p">3. 学联开发的“学联友友”app支持电子学联卡和论坛客户端功能，更简单更强大，推荐大家使用！</text>
+    <view class="tips"></view>
+  </view>
+
+</view>

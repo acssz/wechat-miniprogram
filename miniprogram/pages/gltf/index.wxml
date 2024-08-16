@@ -1,0 +1,12 @@
+<view class="container" style="height: 100%; width: 750rpx;box-sizing: border-box;{{animation_card_canvas}}">
+    <canvas type="webgl" id="c" class="threejs" style="left:0rpx; top:0rpx; width: 100%;" bindtouchstart="touchStart" bindtouchend="touchEnd" bindtouchmove="touchMove" bindtouchcancel="touchCancel" bindlongtap="longTap" bindtap="tap">
+    </canvas>
+</view>
+<div id="card" class="drop-shadow" style="border-radius:60rpx; bottom:450rpx; left:-50rpx; height:370rpx; width:700rpx;">
+    <view style="font-family:dot; font-size: 90rpx; color: rgb(109, 109, 109); margin-left: 60rpx; margin-bottom: 0rpx; margin-top: 20rpx;">{{validStatus}}</view>
+    <view style="font-family:dot; font-size: 30rpx; color: rgb(102, 102, 102); margin-left: 60rpx; margin-bottom: 20rpx; margin-top: -30rpx;">🇨🇭苏黎世学生学者联合会</view>
+    <view style="font-family:dot; font-size: 26rpx; color: rgb(20, 80, 117); margin-left: 260rpx; margin-bottom: 100rpx; margin-top: -108rpx;">{{validDate}}</view>
+    <div bindtap="coopList" class="neumorphic-btn" style="z-index:99;top:-80rpx; border-radius:40rpx; left:-20rpx; height:80rpx; width:185rpx;"><view style="font-size: 20rpx; color: rgb(114, 114, 114); margin-left: 50rpx; margin-bottom: 0rpx; margin-top: 20rpx;">合作商家</view></div>
+    <div class="neumorphic-btn" style="z-index:99;top:-80rpx; border-radius:40rpx; left:-60rpx; height:80rpx; width:185rpx;"><view style="font-size: 20rpx; color: rgb(114, 114, 114); margin-left: 25rpx; margin-bottom: 0rpx; margin-top: 20rpx;">Coming Soon...</view></div>
+    <div style="font-size: 20rpx; color: rgb(200, 200, 200); background-color: rgb(200, 200, 200,0); margin-left: 150rpx; margin-bottom: 0rpx; margin-top: -50rpx;">如有疑问请发送邮件到xuelian@acssz.org反馈</div>
+</div>
